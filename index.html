@@ -222,6 +222,13 @@
             text-align: center;
         }
 
+        .desktop { display: inline; }
+        .mobile { display: none; }
+
+        .hero-title {
+            word-break: keep-all;
+        }
+
         /* 響應式調整 (手機端) */
         @media (max-width: 768px) {
             .hero h1 { font-size: 2.2rem; }
@@ -232,6 +239,9 @@
             .doctor-flex { text-align: center; }
             
             .nav-links { display: none; } /* 簡單起見，手機隱藏文字選單 */
+
+            .desktop { display: none; }
+            .mobile { display: inline; }
         }
 
         @media (min-width: 769px) {
@@ -279,7 +289,10 @@
     </nav>
 
     <header class="hero">
-        <h1>專業診斷 · 守護全家</h1>
+        <h1 class="hero-title">
+            <span class="desktop">專業診斷 · 守護全家</span>
+            <span class="mobile">專業診斷<br>守護全家</span>
+        </h1>
         <p>提供最精準的醫療服務，與您一同邁向健康人生！</p>
         <a href="tel:+886-4-7683066" class="cta-button">立即撥號預約</a>
 
@@ -322,7 +335,7 @@
                     <p class="title">家庭醫學科專科醫師</p>
                     <p>擁有多年臨床經驗。曾任秀傳紀念醫院主治醫師，專精於各項家庭常見疾病。</p>
                     <p style="margin-top: 1rem; font-size: 0.9rem; color: #64748b;">
-                        資歷：高雄醫學大學醫學系畢業 | 前秀傳紀念醫院家醫科主治醫師 | 前花壇春天診所院長
+                        學經歷：高雄醫學大學醫學系畢業 | 前秀傳紀念醫院家醫科主治醫師 | 前花壇春天診所院長
                     </p>
                 </div>
             </div>
